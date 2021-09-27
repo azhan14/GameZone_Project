@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GameZone</title>
+        <meta charset="UTF-8">
+        <meta name="Gamezone Home page" content="GAMEZONE LOGIN PAGE">
+        <meta name="keywords" content="Game Store online e-sport">
+        <meta name="viewport" content="width = device-width,initial-scale = 1">
+        <link href="CSS/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="Images/logo.png" id="logo"></a>  
+            <nav>  
+                <ul>  
+                    <li><a href="index.html"> HOME </a></li>  
+                    <li><a href="store.html"> STORE </a></li>
+                    <li><input type="text" placeholder="search" name="search" id="search"></li>  
+                    <li><a href="login.html" id="login"><img src="Images/login.png" id="login_logo"> LOGIN </a></li>   
+                </ul>  
+            </nav>  
+        </header>
+        <div class="container" id="login_page">
+            <section class="login_block">
+                <img src="Images/logo_login.png" id="login_img">
+            </section>
+            <section class="login_block">
+                <form id="login_form" onsubmit="return validateForm()" action="index.html">
+                    <table id="login_table">
+                        <caption>Sign In</caption>
+                        <tr>
+                            <td><label for="uname">Username</label></td>
+                            <td><input type="text" id="uname" onblur="validateUname()"></td>
+                            <td><span id="uname_err"></span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pass">Password</label></td>
+                            <td><input type="password" id="pass" onblur="validatePass()"></td>
+                            <td><span id="pass_err"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><button formaction="index.html">Login</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><a href="signup.html">Not a user? Sign Up.</a></td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </div>
+        <footer>
+            <hr width="90%" style="margin-top: 10px; color: white;">
+            <p >GameZone. All rights reserved. All trademarks are property of their respective owners in the INDIA and other countries.
+                GST included in all prices where applicable.</p>
+            <nav>  
+                <ul>  
+                    <li class="ele_mid"><a href="#"> Privacy Policy </a></li>  
+                    <li class="ele_mid"><a href="#"> Legal </a></li>
+                    <li><a href="#"> Cookies </a></li>
+                </ul>  
+            </nav>
+            <hr width="90%" style="margin-top: 10px; color: white;">
+            <nav>  
+                <ul>  
+                    <li class="ele_mid"><a href="#"> About </a></li>  
+                    <li class="ele_mid"><a href="#"> Jobs </a></li>
+                    <li class="ele_mid"><a href="#"> Support </a></li>
+                    <li class="ele_mid"><a href="#"><img src="Images/fb.png" style="height: 12px;"> GameZone </a></li>
+                    <li class="ele_mid"><a href="#"><img src="Images/insta.png" style="height: 12px;"> @GameZone </a></li>
+                    <li><a href="#"><img src="Images/twitter.png" style="height: 12px;"> @GameZone </a></li>
+                </ul>  
+            </nav>
+        </footer>
+        <script src="Scripts/validate_login.js"></script>
+    </body>
+</html>

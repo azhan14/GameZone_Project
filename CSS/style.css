@@ -1,0 +1,187 @@
+body {  
+    margin: 0;  
+    background-size: cover;  
+    font-family: sans-serif;  
+}  
+header {  
+    background-color: darkslategray;  
+    /* position: fixed;   */
+    left: 0;  
+    right: 0;  
+    top: 0px; 
+    height: 60px;  
+    display: flex;  
+    align-items: center;
+}  
+header * {  
+    display: inline;  
+}
+#logo{
+    margin-left: 20px;
+    height: 60px;
+} 
+#login_logo{
+    height: 16px;
+} 
+header li {  
+    margin: 20px;  
+}  
+
+header li a {  
+    color: azure;  
+    text-decoration: none;  
+} 
+header li a:hover{
+    color: black;
+}
+#search{
+    padding: 3px;
+    width: 250px;
+    margin-left: 690px;
+}
+#home_content{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-image: url(../Images/bg_gif.gif);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.home_content_image{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 460px;
+    width: 340px;
+}
+.home_content_image:hover{
+    border: 2px solid white;
+}
+#topgames{
+    background-image: linear-gradient(to right,rgb(11, 44, 44),rgb(75, 196, 196));
+    margin: 0;
+    width: 100%;
+}
+.container{
+    display: inline-block;
+}
+.block{
+    display: inline-block;
+    border: 2px solid black;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width: 650px;
+    /* width: 1410px; */
+}
+.top_games_image{
+    width: 180px;
+    height: 250px;
+}
+td{
+    padding-left: 10px;
+    text-align: justify;
+}
+.block:hover{
+    border: 3px solid white;
+}
+button{
+    background-image: linear-gradient(45deg,lightgreen, darkgreen);
+}
+footer{
+    display: inline-block;
+    background-color: darkslategray;
+    /* height: 100px; */
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+}
+p{
+    text-align: center;
+    font-size: 12px;
+}
+footer li a{
+    color: azure;  
+    text-decoration: none; 
+    font-size: 12px; 
+}
+footer ul{
+    text-align: center;
+}
+footer li{
+    display: inline;
+}
+footer .ele_mid::after{
+    content: " | ";
+    color: white;
+}
+footer li a:hover{
+    color: black;
+}
+#store{
+    background-image: linear-gradient(to right,rgb(11, 44, 44),rgb(75, 196, 196));
+    margin: 0;
+    width: 100%;
+}
+sup{
+    font-size: 10px;
+}
+#more{
+    text-decoration: none;
+    color: white;
+}
+#more:hover{
+    color: black;
+    text-decoration: underline;
+}
+#login_page{
+    background-image: linear-gradient(to right,rgb(11, 44, 44),rgb(75, 196, 196));
+    margin: 0;
+    width: 100%;
+    height: 592px;
+    display: inline-block;
+}
+#login_form{
+    padding: 10px;
+    margin-left: 100px;
+}
+.login_block{
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 600px;
+    height: 300px;
+}
+#login_img{
+    height: 300px;
+}
+#login_table{
+    border-collapse: separate;
+    border-spacing: 0 2em;
+}
+
+span{
+    color: darkred;
+    font-size: 12px;
+}
+html{
+    scrollbar-color: lightgreen;
+    scrollbar-width: thin;
+}
+html::-webkit-scrollbar{
+    width: 15px;
+    /* overflow: auto; */
+}
+
+html::-webkit-scrollbar-track{
+    background-color: rgb(75, 196, 196);
+    /* border-radius: 100px; */
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-image: linear-gradient(180deg, lightgreen 0%, darkgreen 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  }
